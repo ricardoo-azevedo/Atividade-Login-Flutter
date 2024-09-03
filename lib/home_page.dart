@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,16 +13,16 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              width: 300,
-              height: 600,
-              color: Colors.cyan,
+              width: 395,
+              height: 650,
+              color: Colors.black,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    width: 72,
-                    height: 190,
-                    color: Colors.amber,
+                    width: 98,
+                    height: 210,
+                    color: Colors.black,
                     alignment: Alignment.center,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -33,21 +34,21 @@ class HomePage extends StatelessWidget {
                               height: 111,
                             ),
                             Container(
-                              width: 29,
-                              height: 29,
+                              width: 42,
+                              height: 42,
                               decoration: const BoxDecoration(
-                                color: Colors.green,
+                                color: Color(0xFF5c5ce4),
                                 shape: BoxShape.circle,
                               ),
                             ),
                             const SizedBox(
-                              height: 5,
+                              height: 4,
                             ),
                             Container(
-                              width: 32,
-                              height: 32,
+                              width: 42,
+                              height: 40,
                               decoration: const BoxDecoration(
-                                color: Colors.red,
+                                color: Color(0xFF5c5ce4),
                                 borderRadius: BorderRadius.only(
                                   topRight: Radius.circular(5),
                                   topLeft: Radius.circular(5),
@@ -62,13 +63,13 @@ class HomePage extends StatelessWidget {
                         Column(
                           children: [
                             const SizedBox(
-                              height: 105,
+                              height: 107,
                             ),
                             Container(
-                              width: 35,
-                              height: 75,
+                              width: 46,
+                              height: 94,
                               decoration: const BoxDecoration(
-                                color: Colors.purple,
+                                color: Color(0xFF5c5ce4),
                                 shape: BoxShape.rectangle,
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(5),
@@ -81,19 +82,153 @@ class HomePage extends StatelessWidget {
                           ],
                         ),
                         const Spacer(flex: 1),
-                     ],
+                      ],
                     ),
                   ),
                   Container(
-                    width: 170,
-                    height: 80,
+                    width: 172,
+                    height: 98,
                     decoration: const BoxDecoration(
-                      color: Colors.brown,
+                      color: Colors.black,
                     ),
-                    child: const Text(
-                      "Get Your Money",
-                      style: TextStyle(
-                        fontSize: 20,
+                    child: const Column(
+                      children: [
+                        SizedBox(
+                          height: 2.8,
+                        ),
+                        Text(
+                          " Get your Money ",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xFFfff8ed),
+                          ),
+                        ),
+                        Text(
+                          "Under Control",
+                          style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xFFfff8ed)),
+                        ),
+                        SizedBox(
+                          height: 1.2,
+                        ),
+                        Text(
+                          "Manage your expenses",
+                          style: TextStyle(
+                              fontSize: 10.8,
+                              color:
+                                  Color.fromARGB(255, 134, 134, 134), //#7b6960
+                              fontWeight: FontWeight.w400),
+                        ),
+                        Text(
+                          "Seamlessly",
+                          style: TextStyle(
+                              fontSize: 10.8,
+                              color: Color.fromARGB(255, 134, 134, 134),
+                              fontWeight: FontWeight.w400),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 214,
+                  ),
+                  Container(
+                    height: 38,
+                    width: 280,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFF5c5ce4),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(8),
+                        topRight: Radius.circular(8),
+                        bottomLeft: Radius.circular(8),
+                        bottomRight: Radius.circular(8),
+                      ),
+                    ),
+                    child: const Column(
+                      children: [
+                        SizedBox(
+                          height: 9,
+                        ),
+                        Text(
+                          "Sign Up with Email ID",
+                          style: TextStyle(
+                              fontSize: 12.8,
+                              fontWeight: FontWeight.w600,
+                              color: Color(0xFFfff8ed)),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 12,
+                  ),
+                  Container(
+                    height: 38,
+                    width: 280,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFfff8ed),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(8),
+                        topRight: Radius.circular(8),
+                        bottomLeft: Radius.circular(8),
+                        bottomRight: Radius.circular(8),
+                      ),
+                    ),
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          height: 9,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.network(
+                              ImageUrls.googleLogo,
+                              width: 16,
+                              height: 16,
+                            ),
+                            const SizedBox(width: 5),
+                            const Text(
+                              "Sign Up with Google",
+                              style: TextStyle(
+                                fontSize: 12.8,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 22,
+                  ),
+                  Container(
+                    width: 220,
+                    height: 18,
+                    decoration: const BoxDecoration(color: Colors.black),
+                    child: RichText(
+                      text: const TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "   Already have an account? ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xFFfff8ed),
+                            ),
+                          ),
+                          TextSpan(
+                            text: "Sign in",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xFFfff8ed),
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),

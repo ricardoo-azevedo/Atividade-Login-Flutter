@@ -1,6 +1,6 @@
 {
-    "name": "myapp",
-    "short_name": "myapp",
+    "name": "flutter_projeto_login",
+    "short_name": "flutter_projeto_login",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
